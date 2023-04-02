@@ -20,12 +20,7 @@ import React from 'react';
 import Image from 'next/image';
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from 'react-icons/ai';
 import { FaWhatsapp } from 'react-icons/fa';
-import {
-  Copyright,
-  SocialMediaLinks,
-  Stat,
-  Testimonial,
-} from '@/pages/Components';
+import { Copyright, SocialMediaLinks, Stat, Testimonial } from '@/Components';
 
 export default function Home() {
   return (
