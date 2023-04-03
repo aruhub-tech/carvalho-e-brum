@@ -33,11 +33,7 @@ export const Stat = (props: StatProps) => {
       justify="center"
       {...rest}
     >
-      <Box
-        as="dt"
-        color={useColorModeValue('gray.600', 'whiteAlpha.700')}
-        fontWeight="medium"
-      >
+      <Box as="dt" color="rgba(0, 0, 0, 0.54)" fontWeight="medium">
         {title}
       </Box>
       <Box
@@ -45,7 +41,7 @@ export const Stat = (props: StatProps) => {
         fontSize="5xl"
         lineHeight="1"
         fontWeight="extrabold"
-        color={useColorModeValue('blue.500', 'blue.300')}
+        color="rgba(0, 0, 0, 0.87)"
       >
         {value}
       </Box>
@@ -85,12 +81,6 @@ export const SocialMediaLinks = (props: ButtonGroupProps) => (
     <IconButton
       as="a"
       href="#"
-      aria-label="GitHub"
-      icon={<FaGithub fontSize="20px" />}
-    />
-    <IconButton
-      as="a"
-      href="#"
       aria-label="Twitter"
       icon={<FaTwitter fontSize="20px" />}
     />
@@ -100,7 +90,6 @@ export const SocialMediaLinks = (props: ButtonGroupProps) => (
 export const Copyright = (props: TextProps) => (
   <Text fontSize="sm" color="white" {...props}>
     &copy; {new Date().getFullYear()} Carvalho & Brum Advogados Associados.
-    Todos os direitos Reservados.
   </Text>
 );
 
