@@ -31,8 +31,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Ações de Veículos Apreendidos e Revisional - Carvalho & Brum |
-          Advogados Associados
+          Ações de Veículos Apreendidos - Carvalho & Brum | Advogados Associados
         </title>
         <meta
           name="description"
