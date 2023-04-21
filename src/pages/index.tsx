@@ -9,15 +9,13 @@ import {
   Container,
   Flex,
   Heading,
-  HStack,
   Img,
+  Link as ChakraLink,
   SimpleGrid,
   Stack,
   StackDivider,
   Text,
-  Link as ChakraLink,
   useColorModeValue as mode,
-  VStack,
 } from '@chakra-ui/react';
 import React from 'react';
 import Image from 'next/image';
@@ -257,32 +255,20 @@ export default function Home() {
               py={{ base: '12', md: '20' }}
             >
               <Stack spacing="8" direction={{ base: 'column', md: 'row' }}>
-                <Testimonial
-                  name="Kemi Alex"
-                  company="VFX Artist & Film-maker"
-                  image="https://images.unsplash.com/photo-1603610515737-193e0b423983?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjk4fHxsYWR5JTIwaGVhZHNob3QlMjBzbWlsaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                >
-                  Sed sed risus pretium quam vulputate dignissim. Ornare quam
-                  viverra orci sagittis. Integer vitae justo eget magna
-                  fermentum iaculis eu non diam
+                <Testimonial name="Maria José C." image="maria.png">
+                  Excelente escritório de advocacia! Profissionais altamente
+                  qualificados e com excelente atendimento. Super indico!
+                  Parabéns Dr. Jorge Brum e equipe.
                 </Testimonial>
-                <Testimonial
-                  name="Kemi Alex"
-                  company="VFX Artist & Film-maker"
-                  image="https://images.unsplash.com/photo-1603610515737-193e0b423983?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjk4fHxsYWR5JTIwaGVhZHNob3QlMjBzbWlsaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                >
-                  Sed sed risus pretium quam vulputate dignissim. Ornare quam
-                  viverra orci sagittis. Integer vitae justo eget magna
-                  fermentum iaculis eu non diam
+                <Testimonial name="Thairles ABUD" image="/thairles-abud.png">
+                  O Melhor escritório de advocacia de Rio Grande.Equipe
+                  altamente preparada e atenciosa.SUPER RECOMENDO!!!!E é bem no
+                  centro da cidade!
                 </Testimonial>
-                <Testimonial
-                  name="Kemi Alex"
-                  company="VFX Artist & Film-maker"
-                  image="https://images.unsplash.com/photo-1603610515737-193e0b423983?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjk4fHxsYWR5JTIwaGVhZHNob3QlMjBzbWlsaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                >
-                  Sed sed risus pretium quam vulputate dignissim. Ornare quam
-                  viverra orci sagittis. Integer vitae justo eget magna
-                  fermentum iaculis eu non diam
+                <Testimonial name="RodrigoSM" image="/rodrigosm.png">
+                  Muito profissional, ótimo atendimento, muito atencioso. E
+                  resolve o problema. Estou super satisfeito. Recomendo. Muito
+                  bom, excelente profissional .
                 </Testimonial>
               </Stack>
             </Box>
@@ -357,7 +343,7 @@ export default function Home() {
                           <Box as="span" flex="1" textAlign="left">
                             <Text fontWeight="bold" fontSize="33px">
                               {' '}
-                              Section 2 title
+                              É POSSIVEL RECUPERAR MEU VEÍCULO?
                             </Text>
                           </Box>
                           {isExpanded ? (
@@ -368,11 +354,120 @@ export default function Home() {
                         </AccordionButton>
                       </h2>
                       <AccordionPanel pb={4}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
+                        Sim, é possível recuperar um veículo apreendido com a
+                        ajuda de um advogado especializado em busca e apreensão
+                        de veículos. O método mais comum é o pagamento integral
+                        da dívida no prazo de 5 dias após a apreensão, mas há
+                        casos em que a apreensão pode ser nula devido a
+                        irregularidades cometidas pelo banco. Entre em contato
+                        conosco para uma consulta gratuita e proteja seus
+                        direitos.
+                      </AccordionPanel>
+                    </>
+                  )}
+                </AccordionItem>
+                <AccordionItem>
+                  {({ isExpanded }) => (
+                    <>
+                      <h2>
+                        <AccordionButton
+                          borderTop="none"
+                          borderBottomWidth={1}
+                          borderBottomColor="#959595"
+                        >
+                          <Box as="span" flex="1" textAlign="left">
+                            <Text fontWeight="bold" fontSize="33px">
+                              {' '}
+                              QUANTO TEMPO ATÉ O BANCO LEILOAR (OU VENDER
+                              DIRETAMENTE) O VEÍCULO?
+                            </Text>
+                          </Box>
+                          {isExpanded ? (
+                            <AiOutlineMinusCircle fontSize="30px" />
+                          ) : (
+                            <AiOutlinePlusCircle fontSize="30px" />
+                          )}
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pb={4}>
+                        Em 5 dias após a apreensão, se não houver a interposição
+                        de defesa, a propriedade e a posse do bem passam a ser
+                        do Banco, momento em que ele poderá vender o bem para
+                        quem quiser ou leiloá-lo.
+                      </AccordionPanel>
+                    </>
+                  )}
+                </AccordionItem>
+
+                <AccordionItem>
+                  {({ isExpanded }) => (
+                    <>
+                      <h2>
+                        <AccordionButton
+                          borderTop="none"
+                          borderBottomWidth={1}
+                          borderBottomColor="#959595"
+                        >
+                          <Box as="span" flex="1" textAlign="left">
+                            <Text fontWeight="bold" fontSize="33px">
+                              {' '}
+                              POSSO SER COBRADO DE MAIS ALGUMA COISA PELO BANCO?
+                            </Text>
+                          </Box>
+                          {isExpanded ? (
+                            <AiOutlineMinusCircle fontSize="30px" />
+                          ) : (
+                            <AiOutlinePlusCircle fontSize="30px" />
+                          )}
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pb={4}>
+                        Se o valor obtido pela venda do veículo não for
+                        suficiente para quitar a dívida do contrato, o banco
+                        pode converter a ação de busca e apreensão em execução
+                        para atingir outros bens do devedor. Isso pode resultar
+                        na perda não só do veículo, mas também do valor que já
+                        foi pago por ele, incluindo a entrada. Além disso, o
+                        devedor pode ter seu nome mantido no SPC até a plena
+                        quitação da dívida. É importante contar com um advogado
+                        especializado em busca e apreensão de veículos para
+                        proteger seus direitos e evitar possíveis consequências
+                        financeiras negativas.
+                      </AccordionPanel>
+                    </>
+                  )}
+                </AccordionItem>
+
+                <AccordionItem>
+                  {({ isExpanded }) => (
+                    <>
+                      <h2>
+                        <AccordionButton
+                          borderTop="none"
+                          borderBottomWidth={1}
+                          borderBottomColor="#959595"
+                        >
+                          <Box as="span" flex="1" textAlign="left">
+                            <Text fontWeight="bold" fontSize="33px">
+                              {' '}
+                              A BUSCA E APREENSÃO É LEGAL?
+                            </Text>
+                          </Box>
+                          {isExpanded ? (
+                            <AiOutlineMinusCircle fontSize="30px" />
+                          ) : (
+                            <AiOutlinePlusCircle fontSize="30px" />
+                          )}
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pb={4}>
+                        A busca e apreensão de veículos é um procedimento
+                        legalmente previsto, que pode ser requerido pelo banco.
+                        No entanto, para que a medida seja válida, o banco
+                        precisa cumprir requisitos legais específicos. É
+                        importante contar com um advogado especializado em busca
+                        e apreensão de veículos para avaliar a legalidade do
+                        procedimento e garantir a proteção de seus direitos.
                       </AccordionPanel>
                     </>
                   )}
